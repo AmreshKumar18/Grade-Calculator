@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Grading System</title>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="margin: 10px 110px; color: azure;"><b>Grade Calculator</b></h1>
+    </div>
+    <div class="container">
+        <div class="right">
+            <div class="math-container">
+                <label style="color: azure; font-size: 1.03rem; margin-top: 10px; font-weight: bold;">Math</label><br>
+                <input style="text-align: center; border-radius: 8px;" type="text" id="math" placeholder="Math">
+            </div>
+            <div class="eng-container">
+                <label
+                    style="color: azure; font-size: 1.03rem; margin-top: 10px; font-weight: bold;">English</label><br>
+                <input style="text-align: center; border-radius: 8px;" type="text" id="eng" placeholder="English">
+            </div>
+            <div class="hindi-container">
+                <label style="color: azure; font-size: 1.03rem; margin-top: 10px; font-weight: bold;">Hindi</label><br>
+                <input style="text-align: center; border-radius: 8px;" type="text" id="hindi" placeholder="Hindi">
+            </div>
+            <div class="science-container">
+                <label
+                    style="color: azure; font-size: 1.03rem; margin-top: 10px; font-weight: bold;">Science</label><br>
+                <input style="text-align: center; border-radius: 8px;" type="text" id="science" placeholder="Science">
+            </div>
+            <div class="Sst-container">
+                <label style="color: azure; font-size: 1.03rem; margin-top: 15px; font-weight: bold;">Social
+                    Science</label><br>
+                <input style="border-radius: 8px; height: 30px; margin-bottom: 25px; text-align: center;" type="text" id="sst" placeholder="Social Science">
+            </div>
+            <button style="font-size: 1.1rem;" onclick="calculate()">Calculate</button>
+        </div>
+        <div class="left">
+            <table>
+                <tr>
+                    <td>Total Marks</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Obtained Marks</td>
+                    <td id="tm"></td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td id="per"></td>
+                </tr>
+                <tr>
+                    <td>Grade</td>
+                    <td id="gd"></td>
+                </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td id="qual"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="gradecalc.js"></script>
+</body>
+
+</html>
